@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TiaGraca</string>
+    <string name="Email">E-mail</string>
+    <string name="Password">Password</string>
+    <string name="conectado">Lembre-me</string>
+    <string name="Login">Entrar</string>
+    <string name="Cadastrar">Cadastre-se</string>
+    <string name="textlogin">Faça seu login</string>
+</resources>

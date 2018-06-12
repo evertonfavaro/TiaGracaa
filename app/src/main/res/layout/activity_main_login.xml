@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+   tools:ignore="ContentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_backgruod_login"
+    tools:context=".MainLogin"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/formlogo"
+        android:scaleType="centerCrop"
+        android:background="@drawable/web_hi_res_512"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+       android:layout_centerInParent="true"
+
+
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="600dp"
+
+        android:layout_height="450dp"
+
+
+
+        android:layout_below="@+id/formlogo"
+        android:layout_marginTop="-5dp">
+
+        <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="450dp"
+            android:layout_gravity="center"
+            android:background="@drawable/trans_vinho_rectangle"
+            android:orientation="vertical"
+
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:text="@string/textlogin"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <AutoCompleteTextView
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/ic_user_icon"
+                android:drawablePadding="5dp"
+                android:hint="@string/Email"
+                android:textAlignment="center"
+
+                android:textSize="14sp"
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/userPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+
+                android:hint="@string/Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/ic_pass_icon" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:button="@drawable/radio_button"
+                android:text="@string/conectado"
+                android:textAlignment="center"
+                android:textColor="@color/Amarelo"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_yellow"
+                android:text="@string/Login"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_yellow"
+                android:text="@string/Cadastrar"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
